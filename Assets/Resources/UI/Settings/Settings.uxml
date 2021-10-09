@@ -2,4 +2,5 @@
     <ui:VisualElement name="header" style="align-items: flex-end;">
         <ui:Button text="X" display-tooltip-when-elided="true" name="close-button" />
     </ui:VisualElement>
+    <UI.Settings.AudioSettingsElement />
 </ui:UXML>

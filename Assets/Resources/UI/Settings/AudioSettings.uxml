@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Slider picking-mode="Ignore" label="Master Volume" value="1" high-value="1" name="master-volume-slider" low-value="0.0001" />
+    <ui:Slider picking-mode="Ignore" label="Music Volume" value="1" high-value="1" name="music-volume-slider" low-value="0.0001" />
+    <ui:Slider picking-mode="Ignore" label="SFX Volume" value="1" high-value="1" name="sfx-volume-slider" low-value="0.0001" />
+</ui:UXML>
