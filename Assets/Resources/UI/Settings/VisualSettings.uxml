@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="panel">
+        <ui:VisualElement name="full-screen-settings" style="flex-direction: row; justify-content: flex-start;">
+            <ui:Label text="Full Screen" display-tooltip-when-elided="true" />
+            <ui:Button text="Previous" display-tooltip-when-elided="true" name="previous-full-screen-button" />
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="full-screen-label" />
+            <ui:Button text="Next" display-tooltip-when-elided="true" name="next-full-screen-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="resolution-settings" style="flex-direction: row; justify-content: flex-start;">
+            <ui:Label text="Resolution" display-tooltip-when-elided="true" />
+            <ui:Button text="Previous" display-tooltip-when-elided="true" name="previous-resolution-button" />
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="resolution-label" />
+            <ui:Button text="Next" display-tooltip-when-elided="true" name="next-resolution-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

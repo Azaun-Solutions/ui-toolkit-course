@@ -5,6 +5,8 @@
   <xs:import schemaLocation="Unity.Cloud.Collaborate.Views.xsd" namespace="Unity.Cloud.Collaborate.Views" />
   <xs:import schemaLocation="Unity.Cloud.Collaborate.Components.xsd" namespace="Unity.Cloud.Collaborate.Components" />
   <xs:import schemaLocation="Unity.Cloud.Collaborate.Components.ChangeListEntries.xsd" namespace="Unity.Cloud.Collaborate.Components.ChangeListEntries" />
+  <xs:import schemaLocation="UI.Settings.xsd" namespace="UI.Settings" />
+  <xs:import schemaLocation="UI.PlainButton.xsd" namespace="UI.PlainButton" />
   <xs:import schemaLocation="UnityEditor.ShortcutManagement.xsd" namespace="UnityEditor.ShortcutManagement" />
   <xs:import schemaLocation="UnityEditor.Toolbars.xsd" namespace="UnityEditor.Toolbars" />
   <xs:import schemaLocation="UnityEditor.UIElements.Debugger.xsd" namespace="UnityEditor.UIElements.Debugger" />
