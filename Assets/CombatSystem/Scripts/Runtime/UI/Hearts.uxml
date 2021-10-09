@@ -1,0 +1,65 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="Hearts.uss" />
+    <ui:VisualElement name="panel" picking-mode="Ignore" class="panel">
+        <ui:VisualElement name="heart-container" class="heart-container">
+            <ui:VisualElement name="heart" class="heart" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="heart-container" style="width: 10%; height: 50%; background-image: resource(&apos;Art/UI/HeartBorder&apos;); visibility: hidden;">
+            <ui:VisualElement name="heart" style="background-image: resource(&apos;Art/UI/Heart&apos;); width: auto; height: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

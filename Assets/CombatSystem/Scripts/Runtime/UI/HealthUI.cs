@@ -33,7 +33,7 @@ namespace CombatSystem.UI
 
         protected abstract void OnHealthChanged();
 
-        private void OnValidate()
+        protected virtual void OnValidate()
         {
             if (m_Owner != null)
             {

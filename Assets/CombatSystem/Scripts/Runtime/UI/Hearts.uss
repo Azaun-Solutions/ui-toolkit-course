@@ -1,0 +1,21 @@
+.panel {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.heart-container {
+    width: 10%;
+    height: 50%;
+    background-image: resource('Art/UI/HeartBorder');
+    visibility: hidden;
+}
+
+.heart {
+    background-image: resource('Art/UI/Heart');
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+}
