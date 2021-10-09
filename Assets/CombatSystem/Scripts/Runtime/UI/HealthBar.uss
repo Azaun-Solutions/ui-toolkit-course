@@ -1,0 +1,8 @@
+.unity-progress-bar__progress {
+    background-color: red;
+}
+
+.health-bar {
+    position: absolute;
+    width: 25%;
+}
