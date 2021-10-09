@@ -25,6 +25,10 @@ namespace UI.Settings
             m_MusicVolumeSlider = this.Q<Slider>("music-volume-slider");
             m_SfxVolumeSlider = this.Q<Slider>("sfx-volume-slider");
 
+            m_MasterVolumeSlider.value = PlayerPrefs.HasKey(k_MasterVolume) ? PlayerPrefs.GetFloat(k_MasterVolume) : 1f;
+            m_MusicVolumeSlider.value = PlayerPrefs.HasKey(k_MusicVolume) ? PlayerPrefs.GetFloat(k_MusicVolume) : 1f;
+            m_SfxVolumeSlider.value = PlayerPrefs.HasKey(k_SfxVolume) ? PlayerPrefs.GetFloat(k_SfxVolume) : 1f;
+
             AudioMixer audioMixer = Resources.Load<AudioMixer>("Audio/Main");
 
             m_MasterVolumeSlider.RegisterValueChangedCallback(evt =>
@@ -39,6 +43,20 @@ namespace UI.Settings
             {
                 audioMixer.SetFloat(k_SfxVolume, Mathf.Log10(evt.newValue) * 20);
             });
+        }
+
+        public void Save()
+        {
+            PlayerPrefs.SetFloat(k_MasterVolume, m_MasterVolumeSlider.value);
+            PlayerPrefs.SetFloat(k_MusicVolume, m_MusicVolumeSlider.value);
+            PlayerPrefs.SetFloat(k_SfxVolume, m_SfxVolumeSlider.value);
+        }
+
+        public void Reset()
+        {
+            m_MasterVolumeSlider.value = PlayerPrefs.GetFloat(k_MasterVolume);
+            m_MusicVolumeSlider.value = PlayerPrefs.GetFloat(k_MusicVolume);
+            m_SfxVolumeSlider.value = PlayerPrefs.GetFloat(k_SfxVolume);
         }
     }
 }

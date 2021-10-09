@@ -4,6 +4,7 @@ using SaveSystem.Scripts.Runtime;
 using SaveSystem.Scripts.Runtime.Channels;
 using SceneManagement;
 using UI.PlainButton;
+using UI.Settings;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -43,7 +44,7 @@ public class MainMenuUI : MonoBehaviour
         newGameButton.clicked += StartNewGame;
         PlainButton settingsButton = root.Q<PlainButton>("settings-button");
         settingsButton.clicked += OpenSettings;
-        m_Settings = root.Q("Settings");
+        m_Settings = root.Q<SettingsElement>();
         Button closeSettingsButton = m_Settings.Q<Button>("close-button");
         closeSettingsButton.clicked += CloseSettings;
     }

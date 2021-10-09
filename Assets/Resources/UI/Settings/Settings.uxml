@@ -3,4 +3,8 @@
         <ui:Button text="X" display-tooltip-when-elided="true" name="close-button" />
     </ui:VisualElement>
     <UI.Settings.AudioSettingsElement />
+    <ui:VisualElement name="footer" style="flex-direction: row;">
+        <ui:Button text="Save" display-tooltip-when-elided="true" name="save-button" />
+        <ui:Button text="Reset" display-tooltip-when-elided="true" name="reset-button" />
+    </ui:VisualElement>
 </ui:UXML>
