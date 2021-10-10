@@ -16,39 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: ca2b6fe4fded54246afcec3c7a33b3d2
-  m_SerializeEntries:
-  - m_GUID: 391cc43881d474644bc1a7e8b30c6e6b
-    m_Address: Assets/Scenes/Managers.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: b6ef4919e4dda3e458a965d5fd9c5a8b
-    m_Address: Assets/ScriptableObjects/Channels/LoadSceneChannel.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 994b25ab7666cff4ab4110d7827c3336
-    m_Address: Assets/Scenes/MainMenu.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: de9459a1ad97dab428ea0d4c2e5bb86f
-    m_Address: Assets/Scenes/Tutorial.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 48d6446e8f1ce5c428abf4978137a675
-    m_Address: Assets/Scenes/Forest.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 7a4086fd84b23894ba3772cc02ce5393
-    m_Address: Assets/ScriptableObjects/GameData.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: ef278fe837613e24488c76635a34e2b0
-    m_Address: Assets/ScriptableObjects/Channels/SaveDataChannel.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 50ba07a51820c8a46a3b5016391250ba
-    m_Address: Assets/ScriptableObjects/Channels/LoadDataChannel.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5cc49605d9088fd46ac9b5b08c174880, type: 2}
   m_SchemaSet:

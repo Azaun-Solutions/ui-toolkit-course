@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 36037e81516bee04880e03f0d9aa57f2
+=======
+guid: 5a9c217e36d8b8c438193f3fdc21662d
+>>>>>>> 948dab1 (remote catalog)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
