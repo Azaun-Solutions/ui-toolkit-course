@@ -159,6 +159,8 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  m_GameData: {fileID: 11400000, guid: 7a4086fd84b23894ba3772cc02ce5393, type: 2}
+  m_LoadDataChannel: {fileID: 11400000, guid: 50ba07a51820c8a46a3b5016391250ba, type: 2}
 --- !u!114 &1202611282
 MonoBehaviour:
   m_ObjectHideFlags: 0

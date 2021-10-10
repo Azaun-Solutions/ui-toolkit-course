@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using SaveSystem.Scripts.Runtime;
+using SaveSystem.Scripts.Runtime.Channels;
 using SceneManagement;
 using UI.PlainButton;
 using UnityEngine;
@@ -12,7 +14,8 @@ public class MainMenuUI : MonoBehaviour
     private VisualElement m_ConfirmationModal;
     [SerializeField] private LoadSceneChannel m_LoadSceneChannel;
     [SerializeField] private SceneReference m_StartingLocation;
-    
+    [SerializeField] private GameData m_GameData;
+    [SerializeField] private LoadDataChannel m_LoadDataChannel;
     
 
     private void Awake()
@@ -24,7 +27,8 @@ public class MainMenuUI : MonoBehaviour
     {
         var root = m_UIDocument.rootVisualElement;
         PlainButton continueButton = root.Q<PlainButton>("continue-button");
-        continueButton.SetEnabled(false);
+        continueButton.SetEnabled(m_GameData.hasPreviousSave);
+        continueButton.clicked += ContinuePreviousGame;
         PlainButton exitButton = root.Q<PlainButton>("exit-button");
         exitButton.clicked += ShowConfirmationModal;
         m_ConfirmationModal = root.Q("confirmation-modal");
@@ -34,6 +38,12 @@ public class MainMenuUI : MonoBehaviour
         cancelButton.clicked += Cancel;
         Button newGameButton = root.Q<PlainButton>("new-game-button");
         newGameButton.clicked += StartNewGame;
+    }
+
+    private void ContinuePreviousGame()
+    {
+        m_GameData.LoadFromBinaryFile();
+        m_LoadDataChannel.Load();
     }
 
     private void StartNewGame()
