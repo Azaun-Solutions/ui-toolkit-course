@@ -10,4 +10,13 @@
             <UI.PlainButton.PlainButton text="EXIT" name="exit-button" class="button" style="font-size: 20%; -unity-font-style: bold; width: 50%; margin-top: 20%;" />
         </ui:VisualElement>
     </ui:VisualElement>
+    <ui:VisualElement name="confirmation-modal" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.39); align-items: center; justify-content: center; display: none;">
+        <ui:VisualElement name="panel" style="background-color: rgba(204, 0, 0, 255);">
+            <ui:Label text="Are you sure you want to quit?" display-tooltip-when-elided="true" style="font-size: 18px; -unity-font-style: bold;" />
+            <ui:VisualElement name="footer" style="flex-direction: row;">
+                <ui:Button text="Confirm" display-tooltip-when-elided="true" name="confirm-button" />
+                <ui:Button text="Cancel" display-tooltip-when-elided="true" name="cancel-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>
