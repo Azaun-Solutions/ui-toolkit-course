@@ -350,7 +350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1235358074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,6 +563,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InputReader: {fileID: 11400000, guid: 45015fdc53f6ddd4ab8731997b93544a, type: 2}
   m_PauseMenu: {fileID: 1235358074}
+  m_GameData: {fileID: 11400000, guid: 7a4086fd84b23894ba3772cc02ce5393, type: 2}
+  m_SaveDataChannel: {fileID: 11400000, guid: ef278fe837613e24488c76635a34e2b0, type: 2}
+  m_MainMenuScene:
+    m_AssetGUID: 994b25ab7666cff4ab4110d7827c3336
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  m_LoadSceneChannel: {fileID: 11400000, guid: b6ef4919e4dda3e458a965d5fd9c5a8b, type: 2}
 --- !u!4 &1653413186
 Transform:
   m_ObjectHideFlags: 0

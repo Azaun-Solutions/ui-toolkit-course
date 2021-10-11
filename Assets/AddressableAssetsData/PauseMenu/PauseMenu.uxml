@@ -2,6 +2,7 @@
     <ui:VisualElement name="overlay" style="background-color: rgba(0, 0, 0, 0.24); position: absolute; left: 0; top: 0; right: 0; bottom: 0; justify-content: center; align-items: center; display: flex;">
         <ui:VisualElement name="panel" style="width: 50%; align-items: center;">
             <ui:Button text="Resume" display-tooltip-when-elided="true" name="resume-button" />
+            <ui:Button text="Main Menu" display-tooltip-when-elided="true" name="main-menu-button" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

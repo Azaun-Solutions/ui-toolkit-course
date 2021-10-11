@@ -9,6 +9,7 @@ namespace Core.Scripts.Runtime.UI
     {
         private UIDocument m_UIDocument;
         public event Action resumed;
+        public event Action openedMainMenu;
 
         private void Awake()
         {
@@ -20,8 +21,14 @@ namespace Core.Scripts.Runtime.UI
             var root = m_UIDocument.rootVisualElement;
             Button resumeButton = root.Q<Button>("resume-button");
             resumeButton.clicked += Resume;
-
+            Button mainMenuButton = root.Q<Button>("main-menu-button");
+            mainMenuButton.clicked += OpenMainMenu;
             Time.timeScale = 0;
+        }
+
+        private void OpenMainMenu()
+        {
+            openedMainMenu?.Invoke();
         }
 
         private void OnDisable()
