@@ -9,6 +9,7 @@ namespace Core.Input
     {
         private Controls m_Controls;
         public event Action paused;
+        public event Action unpaused;
 
         private void OnEnable()
         {
@@ -21,6 +22,18 @@ namespace Core.Input
             m_Controls.Enable();
         }
 
+        public void EnableUIInput()
+        {
+            m_Controls.UI.Enable();
+            m_Controls.Gameplay.Disable();
+        }
+
+        public void EnableGameplayInput()
+        {
+            m_Controls.Gameplay.Enable();
+            m_Controls.UI.Disable();
+        }
+        
         public void OnPause(InputAction.CallbackContext context)
         {
             if (context.performed) paused?.Invoke();
@@ -28,6 +41,7 @@ namespace Core.Input
 
         public void OnUnpause(InputAction.CallbackContext context)
         {
+            if (context.performed) unpaused?.Invoke();
         }
     }
 }
