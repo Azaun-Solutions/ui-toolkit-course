@@ -11,6 +11,9 @@ namespace UI.Settings
 
         private Label m_ResolutionLabel;
         private Label m_FullScreenLabel;
+        
+        private const string k_ResolutionIndex = "ResolutionIndex";
+        private const string k_FullScreen = "FullScreen";
 
         private int m_CurrentResolutionIndex;
         private bool m_IsFullScreen;
@@ -34,10 +37,31 @@ namespace UI.Settings
             m_IsFullScreen = Screen.fullScreen;
             SetFullScreenField();
 
-            m_CurrentResolutionIndex = Array.FindIndex(Screen.resolutions,
-                resolution => resolution.width == Screen.currentResolution.width &&
-                              resolution.height == Screen.currentResolution.height);
+            if (PlayerPrefs.HasKey(k_ResolutionIndex))
+            {
+                m_CurrentResolutionIndex = PlayerPrefs.GetInt(k_ResolutionIndex);
+            }
+            else
+            {
+                m_CurrentResolutionIndex = Array.FindIndex(Screen.resolutions,
+                    resolution => resolution.width == Screen.currentResolution.width &&
+                                  resolution.height == Screen.currentResolution.height);
+            }
             OnResolutionChanged();
+        }
+
+        public void Save()
+        {
+            PlayerPrefs.SetInt(k_ResolutionIndex, m_CurrentResolutionIndex);
+            PlayerPrefs.SetInt(k_FullScreen, Convert.ToInt32(m_IsFullScreen));
+        }
+
+        public void Reset()
+        {
+            m_CurrentResolutionIndex = PlayerPrefs.GetInt(k_ResolutionIndex);
+            OnResolutionChanged();
+            m_IsFullScreen = Convert.ToBoolean(PlayerPrefs.GetInt(k_FullScreen));
+            OnFullScreenChanged();
         }
 
         private void NextFullScreen()
