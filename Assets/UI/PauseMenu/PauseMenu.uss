@@ -1,0 +1,79 @@
+.menu-button {
+    background-image: resource('Art/UI/Normal');
+    flex-basis: 18%;
+    font-size: 40%;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    color: #EFE3C0;
+}
+
+.menu-button:active {
+    background-image: resource('Art/UI/Pressed');
+}
+
+.content {
+    flex-basis: 90%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 40%;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-image: resource('Art/UI/Dialogue');
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.close-button {
+    background-image: resource('Art/UI/CloseButton');
+    height: 80%;
+    width: 20%;
+    background-color: rgba(81, 81, 81, 0);
+    font-size: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    background-image: resource('Art/UI/_Settings/BG_Settings');
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 30px;
+    align-content: center;
+}
+
+.title {
+    width: 40%;
+    justify-content: flex-start;
+    align-items: auto;
+    font-size: 45%;
+    -unity-font-style: bold;
+    color: #EFE3C0;
+}
+
+.close-button-icon {
+    background-image: resource('Art/UI/CloseButtonX');
+    width: 40%;
+    height: 42%;
+    -unity-background-image-tint-color: rgba(245, 189, 189, 255);
+}
