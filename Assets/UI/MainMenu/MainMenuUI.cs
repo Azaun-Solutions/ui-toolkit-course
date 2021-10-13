@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using SceneManagement;
 using UI.PlainButton;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -9,6 +10,10 @@ public class MainMenuUI : MonoBehaviour
 {
     private UIDocument m_UIDocument;
     private VisualElement m_ConfirmationModal;
+    [SerializeField] private LoadSceneChannel m_LoadSceneChannel;
+    [SerializeField] private SceneReference m_StartingLocation;
+    
+    
 
     private void Awake()
     {
@@ -27,6 +32,13 @@ public class MainMenuUI : MonoBehaviour
         confirmButton.clicked += QuitGame;
         Button cancelButton = m_ConfirmationModal.Q<Button>("cancel-button");
         cancelButton.clicked += Cancel;
+        Button newGameButton = root.Q<PlainButton>("new-game-button");
+        newGameButton.clicked += StartNewGame;
+    }
+
+    private void StartNewGame()
+    {
+        m_LoadSceneChannel.Load(m_StartingLocation);
     }
 
     private void ShowConfirmationModal()
