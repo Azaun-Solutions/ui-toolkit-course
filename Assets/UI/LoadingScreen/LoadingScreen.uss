@@ -1,0 +1,24 @@
+.panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: resource('Art/UI/_Settings/BG_Settings');
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    width: 50%;
+    height: 50%;
+    background-image: resource('Art/UI/_MainMenu/ChopChop_Title');
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.progress-bar {
+    width: 75%;
+}
