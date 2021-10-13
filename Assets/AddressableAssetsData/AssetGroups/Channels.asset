@@ -33,6 +33,10 @@ MonoBehaviour:
     m_Address: Assets/ScriptableObjects/Channels/LoadSceneChannel.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 695737fcd46bbf1439500df3ae7ea5d7
+    m_Address: Assets/ScriptableObjects/Channels/SceneReadyChannel.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5cc49605d9088fd46ac9b5b08c174880, type: 2}
   m_SchemaSet:

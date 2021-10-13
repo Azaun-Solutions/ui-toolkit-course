@@ -33,6 +33,10 @@ MonoBehaviour:
     m_Address: Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: eae16d564eb9f5a4b8976bff34ec3f96
+    m_Address: Assets/ScriptableObjects/DownloadState.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5cc49605d9088fd46ac9b5b08c174880, type: 2}
   m_SchemaSet:
