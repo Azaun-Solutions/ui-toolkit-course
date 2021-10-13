@@ -1,6 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:Template name="ConfirmationModal" src="/Assets/UI/ConfirmationModal/ConfirmationModal.uxml" />
-    <ui:Template name="Settings" src="/Assets/Resources/UI/Settings/Settings.uxml" />
     <Style src="MainMenu.uss" />
     <ui:VisualElement name="panel" class="panel">
         <ui:VisualElement name="title" class="title" style="display: flex;" />
@@ -12,6 +11,6 @@
             <UI.PlainButton.PlainButton text="EXIT" name="exit-button" class="button" style="font-size: 20%; -unity-font-style: bold; width: 50%; margin-top: 20%;" />
         </ui:VisualElement>
     </ui:VisualElement>
+    <UI.Settings.SettingsElement style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgb(0, 0, 0); display: none;" />
     <ui:Instance template="ConfirmationModal" name="confirmation-modal" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;" />
-    <ui:Instance template="Settings" name="Settings" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 255); display: none;" />
 </ui:UXML>

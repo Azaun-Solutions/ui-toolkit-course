@@ -12,13 +12,12 @@ using UnityEngine.UIElements;
 public class MainMenuUI : MonoBehaviour
 {
     private UIDocument m_UIDocument;
+    private SettingsElement m_Settings;
     private VisualElement m_ConfirmationModal;
     [SerializeField] private LoadSceneChannel m_LoadSceneChannel;
     [SerializeField] private SceneReference m_StartingLocation;
     [SerializeField] private GameData m_GameData;
     [SerializeField] private LoadDataChannel m_LoadDataChannel;
-    
-    private VisualElement m_Settings;
 
     private void Awake()
     {

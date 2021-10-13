@@ -7,6 +7,8 @@ namespace UI.Settings
     {
         private AudioSettingsElement m_AudioSettings;
         private VisualSettingsElement m_VisualSettings;
+        private Button m_GraphicsTab;
+        private Button m_AudioTab;
         
         public new class UxmlFactory : UxmlFactory<SettingsElement, UxmlTraits> {}
 
@@ -22,6 +24,29 @@ namespace UI.Settings
             saveButton.clicked += Save;
             Button resetButton = this.Q<Button>("reset-button");
             resetButton.clicked += Reset;
+
+            m_GraphicsTab = this.Q<Button>("graphics-tab");
+            m_GraphicsTab.clicked += OnClickedGraphicsTab;
+            m_AudioTab = this.Q<Button>("audio-tab");
+            m_AudioTab.clicked += OnClickedAudioTab;
+            
+            OnClickedGraphicsTab();
+        }
+
+        private void OnClickedAudioTab()
+        {
+            m_VisualSettings.style.display = DisplayStyle.None;
+            m_AudioSettings.style.display = DisplayStyle.Flex;
+            m_GraphicsTab.SetEnabled(true);
+            m_AudioTab.SetEnabled(false);
+        }
+
+        private void OnClickedGraphicsTab()
+        {
+            m_VisualSettings.style.display = DisplayStyle.Flex;
+            m_AudioSettings.style.display = DisplayStyle.None;
+            m_GraphicsTab.SetEnabled(false);
+            m_AudioTab.SetEnabled(true);
         }
 
         private void Save()

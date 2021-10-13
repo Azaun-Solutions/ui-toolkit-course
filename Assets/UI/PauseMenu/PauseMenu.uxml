@@ -1,19 +1,17 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="overlay" style="background-color: rgba(0, 0, 0, 0.24); position: absolute; left: 0; top: 0; right: 0; bottom: 0; justify-content: center; align-items: center; display: flex;">
-        <ui:VisualElement name="panel" style="width: 50%; align-items: center; flex-grow: 0; height: 50%;">
-            <ui:VisualElement name="header" style="background-image: resource(&apos;Art/UI/Dialogue&apos;); width: auto; height: auto; flex-grow: 1; padding-left: 3%; padding-right: 3%; padding-top: 3%; padding-bottom: 3%; margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%; justify-content: space-between; flex-direction: row;">
-                <ui:Label text="Label" display-tooltip-when-elided="true" name="title" style="width: 40%; font-size: 45%; -unity-font-style: bold; justify-content: flex-start; align-items: stretch;" />
-                <UI.PlainButton.PlainButton name="close-button" style="background-image: resource(&apos;Art/UI/CloseButton&apos;); width: 20%; height: 80%; justify-content: center; align-items: center;">
-                    <ui:VisualElement name="close-button-icon" style="background-image: resource(&apos;Art/UI/CloseButtonX&apos;); width: 40px; height: 42px;" />
-                </UI.PlainButton.PlainButton>
-            </ui:VisualElement>
-            <ui:VisualElement name="body" style="width: auto;">
-                <ui:VisualElement name="content">
-                    <UI.PlainButton.PlainButton name="settings-button" text="Settings" style="background-image: resource(&apos;Art/UI/Normal&apos;); font-size: 50%; -unity-font-style: bold; -unity-text-align: middle-center; flex-basis: 23%;" />
-                    <UI.PlainButton.PlainButton name="main-menu-button" text="Main Menu" style="background-image: resource(&apos;Art/UI/Normal&apos;); font-size: 50%; -unity-font-style: bold; -unity-text-align: middle-center; flex-basis: 23%;" />
-                    <UI.PlainButton.PlainButton text="Resume" name="resume-button" style="background-image: resource(&apos;Art/UI/Normal&apos;); font-size: 50%; -unity-font-style: bold; -unity-text-align: middle-center; flex-basis: 23%;" />
-                </ui:VisualElement>
-            </ui:VisualElement>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="PauseMenu.uss" />
+    <ui:VisualElement name="body" class="body">
+        <ui:VisualElement name="content" class="content">
+            <UI.PlainButton.PlainButton name="resume-button" text="Resume" class="menu-button" style="font-size: 40%;" />
+            <UI.PlainButton.PlainButton name="settings-button" text="Settings" class="menu-button" style="font-size: 40%;" />
+            <UI.PlainButton.PlainButton name="main-menu-button" text="Main Menu" class="menu-button" style="font-size: 40%;" />
         </ui:VisualElement>
     </ui:VisualElement>
+    <ui:VisualElement name="header" class="header">
+        <ui:Label text="Pause" display-tooltip-when-elided="true" name="title" class="title" style="font-size: 40%;" />
+        <UI.PlainButton.PlainButton name="close-button" class="close-button">
+            <ui:VisualElement name="close-button-icon" class="close-button-icon" />
+        </UI.PlainButton.PlainButton>
+    </ui:VisualElement>
+    <UI.Settings.SettingsElement style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;" />
 </ui:UXML>
