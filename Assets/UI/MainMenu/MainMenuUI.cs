@@ -36,6 +36,8 @@ public class MainMenuUI : MonoBehaviour
         confirmButton.clicked += QuitGame;
         Button cancelButton = m_ConfirmationModal.Q<Button>("cancel-button");
         cancelButton.clicked += Cancel;
+        Button closeButton = m_ConfirmationModal.Q<Button>("close-button");
+        closeButton.clicked += Cancel;
         Button newGameButton = root.Q<PlainButton>("new-game-button");
         newGameButton.clicked += StartNewGame;
     }

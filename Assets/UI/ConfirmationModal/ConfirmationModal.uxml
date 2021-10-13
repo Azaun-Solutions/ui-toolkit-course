@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="ConfirmationModal.uss" />
+    <ui:VisualElement name="overlay" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.39);" />
+    <ui:VisualElement name="body" class="body">
+        <ui:VisualElement name="content" class="content">
+            <ui:Label text="Are you sure you want to quit?" display-tooltip-when-elided="true" name="description" class="description" style="font-size: 30%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="footer" class="footer">
+            <UI.PlainButton.PlainButton name="confirm-button" text="Confirm" class="modal-button" style="font-size: 30%;" />
+            <UI.PlainButton.PlainButton name="cancel-button" text="Cancel" class="modal-button" style="font-size: 30%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="header" class="header">
+        <ui:Label text="Quit?" display-tooltip-when-elided="true" name="title" class="modal-title" style="font-size: 40%;" />
+        <UI.PlainButton.PlainButton name="close-button" class="close-button">
+            <ui:VisualElement name="close-button-icon" class="close-button-icon" />
+        </UI.PlainButton.PlainButton>
+    </ui:VisualElement>
+</ui:UXML>

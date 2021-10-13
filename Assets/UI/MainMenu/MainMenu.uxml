@@ -1,7 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ConfirmationModal" src="/Assets/UI/ConfirmationModal/ConfirmationModal.uxml" />
     <Style src="MainMenu.uss" />
     <ui:VisualElement name="panel" class="panel">
-        <ui:VisualElement name="title" class="title" />
+        <ui:VisualElement name="title" class="title" style="display: flex;" />
         <ui:VisualElement name="panel-buttons" class="panel-buttons">
             <UI.PlainButton.PlainButton text="CONTINUE" name="continue-button" class="button" style="font-size: 20%; -unity-font-style: bold; width: 50%; margin-top: 20%;" />
             <UI.PlainButton.PlainButton text="NEW GAME" name="new-game-button" class="button" style="font-size: 20%;" />
@@ -10,13 +11,5 @@
             <UI.PlainButton.PlainButton text="EXIT" name="exit-button" class="button" style="font-size: 20%; -unity-font-style: bold; width: 50%; margin-top: 20%;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="confirmation-modal" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.39); align-items: center; justify-content: center; display: none;">
-        <ui:VisualElement name="panel" style="background-color: rgba(204, 0, 0, 255);">
-            <ui:Label text="Are you sure you want to quit?" display-tooltip-when-elided="true" style="font-size: 18px; -unity-font-style: bold;" />
-            <ui:VisualElement name="footer" style="flex-direction: row;">
-                <ui:Button text="Confirm" display-tooltip-when-elided="true" name="confirm-button" />
-                <ui:Button text="Cancel" display-tooltip-when-elided="true" name="cancel-button" />
-            </ui:VisualElement>
-        </ui:VisualElement>
-    </ui:VisualElement>
+    <ui:Instance template="ConfirmationModal" name="confirmation-modal" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;" />
 </ui:UXML>

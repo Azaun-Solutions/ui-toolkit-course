@@ -1,0 +1,94 @@
+.modal-button {
+    background-image: resource('Art/UI/Normal');
+    font-size: 40%;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    color: rgb(239, 227, 192);
+    margin-right: 3%;
+    margin-left: 3%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+}
+
+.footer {
+    flex-direction: row;
+}
+
+.modal-button:active {
+    background-image: resource('Art/UI/Pressed');
+}
+
+.description {
+    color: rgb(116, 79, 50);
+    font-size: 30%;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.content {
+    flex-basis: 80%;
+    width: 80%;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-image: resource('Art/UI/Dialogue');
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.close-button {
+    background-image: resource('Art/UI/CloseButton');
+    height: 80%;
+    width: 20%;
+    background-color: rgba(81, 81, 81, 0);
+    font-size: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    background-image: resource('Art/UI/_Settings/BG_Settings');
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 30px;
+    align-content: center;
+}
+
+.modal-title {
+    width: 40%;
+    justify-content: flex-start;
+    align-items: auto;
+    font-size: 45%;
+    -unity-font-style: bold;
+    color: rgb(239, 227, 192);
+}
+
+.close-button-icon {
+    background-image: resource('Art/UI/CloseButtonX');
+    width: 40%;
+    height: 42%;
+    -unity-background-image-tint-color: rgb(245, 189, 189);
+}
