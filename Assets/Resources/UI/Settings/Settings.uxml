@@ -1,11 +1,23 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="header" style="align-items: flex-end;">
-        <ui:Button text="X" display-tooltip-when-elided="true" name="close-button" />
+    <Style src="Settings.uss" />
+    <ui:VisualElement name="header" class="settings-header">
+        <ui:VisualElement name="tabs" class="settings-tabs">
+            <UI.PlainButton.PlainButton name="audio-tab" text="Audio" class="settings-tab" style="font-size: 30%;" />
+            <UI.PlainButton.PlainButton name="graphics-tab" text="Graphics" class="settings-tab" style="font-size: 30%;" />
+            <UI.PlainButton.PlainButton name="language-tab" text="Language" class="settings-tab" style="font-size: 30%;" />
+        </ui:VisualElement>
+        <UI.PlainButton.PlainButton name="close-button" class="settings-close-button">
+            <ui:VisualElement name="close-button-icon" class="settings-close-button-icon" />
+        </UI.PlainButton.PlainButton>
     </ui:VisualElement>
-    <UI.Settings.AudioSettingsElement />
-    <UI.Settings.VisualSettingsElement />
-    <ui:VisualElement name="footer" style="flex-direction: row;">
-        <ui:Button text="Save" display-tooltip-when-elided="true" name="save-button" />
-        <ui:Button text="Reset" display-tooltip-when-elided="true" name="reset-button" />
+    <ui:VisualElement name="body" class="settings-body">
+        <ui:VisualElement name="content" class="settings-content">
+            <UI.Settings.VisualSettingsElement style="display: none;" />
+            <UI.Settings.AudioSettingsElement style="display: none;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="footer" class="settings-footer">
+            <UI.PlainButton.PlainButton name="save-button" text="Save" class="settings-button" style="font-size: 30%;" />
+            <UI.PlainButton.PlainButton name="reset-button" text="Reset" class="settings-button" style="font-size: 30%;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

@@ -23,15 +23,15 @@ namespace UI.Settings
             VisualTreeAsset visualTree = Resources.Load<VisualTreeAsset>("UI/Settings/VisualSettings");
             visualTree.CloneTree(this);
 
-            m_ResolutionLabel = this.Q<Label>("resolution-label");
-            m_FullScreenLabel = this.Q<Label>("full-screen-label");
-            Button previousResolutionButton = this.Q<Button>("previous-resolution-button");
+            m_ResolutionLabel = this.Q<Label>("resolution-setting-value");
+            m_FullScreenLabel = this.Q<Label>("full-screen-setting-value");
+            Button previousResolutionButton = this.Q<Button>("resolution-previous-button");
             previousResolutionButton.clicked += PreviousResolution;
-            Button nextResolutionButton = this.Q<Button>("next-resolution-button");
+            Button nextResolutionButton = this.Q<Button>("resolution-next-button");
             nextResolutionButton.clicked += NextResolution;
-            Button previousFullScreenButton = this.Q<Button>("previous-full-screen-button");
+            Button previousFullScreenButton = this.Q<Button>("full-screen-previous-button");
             previousFullScreenButton.clicked += PreviousFullScreen;
-            Button nextFullScreenButton = this.Q<Button>("next-full-screen-button");
+            Button nextFullScreenButton = this.Q<Button>("full-screen-next-button");
             nextFullScreenButton.clicked += NextFullScreen;
 
             m_IsFullScreen = Screen.fullScreen;

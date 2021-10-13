@@ -1,0 +1,152 @@
+.settings-button {
+    background-image: resource('Art/UI/Normal');
+    font-size: 40%;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    color: rgb(239, 227, 192);
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    width: 35%;
+}
+
+.settings-button:active {
+    background-image: resource('Art/UI/Pressed');
+}
+
+.settings-footer {
+    margin-bottom: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.settings-content {
+    flex-basis: 80%;
+    width: 90%;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-top: 5%;
+}
+
+.settings-close-button {
+    background-image: resource('Art/UI/CloseButton');
+    background-color: rgba(81, 81, 81, 0);
+    width: 10%;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-body {
+    background-image: resource('Art/UI/_Settings/BG_Settings');
+    flex-grow: 7;
+    align-items: center;
+}
+
+.settings-close-button-icon {
+    background-image: resource('Art/UI/CloseButtonX');
+    width: 40%;
+    height: 42%;
+    -unity-background-image-tint-color: rgb(245, 189, 189);
+}
+
+.settings-header {
+    background-image: resource('Art/UI/_Settings/Tab_BG');
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+.settings-tabs {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-bottom: 1%;
+    align-items: flex-end;
+}
+
+.settings-tab {
+    font-size: 30%;
+    -unity-font-style: bold;
+    color: #EFE3C0;
+}
+
+.settings-tab:disabled {
+    color: rgb(183, 158, 123);
+}
+
+.setting {
+    flex-direction: row;
+    background-image: resource('Art/UI/_Settings/BG_Setting_Row');
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.setting-label {
+    color: #744F32;
+    font-size: 25%;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    flex-grow: 1;
+}
+
+.setting-option {
+    flex-direction: row;
+    width: 40%;
+}
+
+.setting-value {
+    color: #744F32;
+    flex-grow: 1;
+    font-size: 25%;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+}
+
+.setting-next-button {
+    background-image: resource('Art/UI/_Settings/BtnArrowRightNormal');
+    width: 10%;
+}
+
+.setting-next-button:active {
+    background-image: resource('Art/UI/_Settings/BtnArrowRightSelected');
+}
+
+.setting-next-button:disabled {
+    background-image: resource('Art/UI/_Settings/BtnArrowRightDisabled');
+}
+
+.setting-previous-button {
+    background-image: resource('Art/UI/_Settings/BtnArrowLeftNormal');
+    width: 10%;
+}
+
+.setting-previous-button:active {
+    background-image: resource('Art/UI/_Settings/BtnArrowLeftSelected');
+}
+
+.setting-next-button:disabled {
+    background-image: resource('Art/UI/_Settings/BtnArrowLeftDisabled');
+}
+
+.settings-slider {
+    flex-shrink: 1;
+    align-items: center;
+    font-size: 100%;
+}
+
+.unity-slider__label {
+    color: #744F32;
+    font-size: 25%;
+    -unity-font-style: bold;
+}
+
+.unity-slider__input {
+    flex-shrink: 1;
+}
