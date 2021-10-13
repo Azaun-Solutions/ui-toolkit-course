@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="MainMenu.uss" />
+    <ui:VisualElement name="panel" class="panel">
+        <ui:VisualElement name="title" class="title" />
+        <ui:VisualElement name="panel-buttons" class="panel-buttons">
+            <UI.PlainButton.PlainButton text="CONTINUE" name="continue-button" class="button" style="font-size: 20%; -unity-font-style: bold; width: 50%; margin-top: 20%;" />
+            <UI.PlainButton.PlainButton text="NEW GAME" name="new-game-button" class="button" style="font-size: 20%;" />
+            <UI.PlainButton.PlainButton text="SETTINGS" name="settings-button" class="button" style="font-size: 20%; -unity-font-style: bold; width: 50%; margin-top: 10%;" />
+            <UI.PlainButton.PlainButton text="CREDITS" name="credits-button" class="button" style="font-size: 20%; -unity-font-style: bold; width: 50%; margin-top: 10%;" />
+            <UI.PlainButton.PlainButton text="EXIT" name="exit-button" class="button" style="font-size: 20%; -unity-font-style: bold; width: 50%; margin-top: 20%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

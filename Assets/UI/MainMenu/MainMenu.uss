@@ -1,0 +1,44 @@
+.panel {
+    width: 40%;
+    height: 100%;
+    background-image: resource('Art/UI/_MainMenu/BG_Menu');
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.38);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.title {
+    background-image: resource('Art/UI/_MainMenu/ChopChop_Title');
+    width: auto;
+    height: 30%;
+}
+
+.panel-buttons {
+    flex-grow: 1;
+    align-items: center;
+}
+
+.button {
+    font-size: 20%;
+    -unity-font-style: bold;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.button:enabled {
+    color: rgb(239, 227, 192);
+}
+
+.button:hover {
+    color: rgb(217, 162, 116);
+}
+
+.button:active {
+    color: rgb(243, 182, 130);
+}
+
+.button:disabled {
+    color: rgb(183, 158, 123);
+}
