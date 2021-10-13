@@ -17,6 +17,7 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] private GameData m_GameData;
     [SerializeField] private LoadDataChannel m_LoadDataChannel;
     
+    private VisualElement m_Settings;
 
     private void Awake()
     {
@@ -40,6 +41,11 @@ public class MainMenuUI : MonoBehaviour
         closeButton.clicked += Cancel;
         Button newGameButton = root.Q<PlainButton>("new-game-button");
         newGameButton.clicked += StartNewGame;
+        PlainButton settingsButton = root.Q<PlainButton>("settings-button");
+        settingsButton.clicked += OpenSettings;
+        m_Settings = root.Q("Settings");
+        Button closeSettingsButton = m_Settings.Q<Button>("close-button");
+        closeSettingsButton.clicked += CloseSettings;
     }
 
     private void ContinuePreviousGame()
@@ -67,5 +73,15 @@ public class MainMenuUI : MonoBehaviour
     {
         m_ConfirmationModal.style.display = DisplayStyle.None;
         Application.Quit();
+    }
+
+    private void CloseSettings()
+    {
+        m_Settings.style.display = DisplayStyle.None;
+    }
+
+    private void OpenSettings()
+    {
+        m_Settings.style.display = DisplayStyle.Flex;
     }
 }
